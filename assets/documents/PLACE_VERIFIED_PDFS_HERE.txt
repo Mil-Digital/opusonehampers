@@ -1,0 +1,2 @@
+Place only verified, supplied Opus One catalogue PDFs in this folder.
+Then update CONFIG.catalogues in js/script.js with the relative file path.

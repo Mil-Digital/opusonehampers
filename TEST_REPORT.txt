@@ -1,0 +1,125 @@
+OPUS ONE CHRISTMAS GIFTING — TEST REPORT
+Test date: 19 November 2026
+
+PASSED — Browser behavior
+- Website loaded from a local static server with no console warnings or errors.
+- Five-step quiz opened, advanced, went back, completed, and reopened for retake.
+- Corporate answer path returned Custom Corporate Hampers as the primary match.
+- Alternative recommendation selection updated the primary result.
+- Catalogue tabs switched between all four category panels.
+- Music started only after a click, looped, and paused from the same control.
+- Mobile navigation opened and closed.
+
+PASSED — Recommendation engine branch checks
+- Gift Set
+- Hampers Box
+- Hampers Tinggi
+- Custom Corporate Hampers
+
+PASSED — Link and configuration checks
+- WhatsApp quiz summary contains recipient, occasion, quantity, style,
+  packaging preference, and selected recommendation.
+- Official general Christmas catalogue destination is configured.
+- Unverified category PDF destinations remain null and use WhatsApp fallback.
+- All local HTML image, stylesheet, script, and audio references resolve.
+
+PASSED — Responsive checks
+- Desktop viewport: 1440 × 900
+- Mobile viewport: 390 × 844
+- Full mobile quiz view and desktop hero were visually inspected.
+
+PASSED — Package checks
+- JavaScript syntax check completed.
+- No TODO, lorem ipsum, placeholder, or example.com content remains.
+- ZIP inventory verified after packaging.
+
+External WhatsApp and catalogue buttons were verified by configuration and URL
+construction without sending a message or altering an external account.
+
+
+REVISION ADDENDUM — 19 NOVEMBER 2026
+
+UPDATED
+- Main descriptive copy and quiz interface changed to Indonesian; key section and
+  category titles remain in English.
+- Three gifting journey cards now include individual line illustrations.
+- Gift Set and Hampers Box packaging choices have descriptive comparisons.
+- Hampers Tinggi and Special Collaborations now explain their distinct direction
+  and note that specific contents are confirmed by Opus One.
+- Corporate gifting occasions are presented as four descriptive cards.
+- Subtle falling-snow animation added, with reduced-motion support.
+
+REVISION CHECKS
+- JavaScript syntax check: passed.
+- HTML parser check: passed.
+- Local image, stylesheet, script, and audio references: passed.
+- Catalogue tab/panel matching: passed.
+- Expected journey and corporate card counts: passed.
+- A full interactive browser regression test was not completed for this revision.
+
+REVISION ADDENDUM — 19 NOVEMBER 2026 (CATEGORY LAYOUT & NAVIGATION)
+
+UPDATED
+- Removed the entire fixed top navigation bar.
+- Preserved the Christmas music control as a compact floating button.
+- Standardized the four category sections to the same sequence:
+  category feature image and description, What's Inside and format options,
+  followed by a visual collection/product inspiration gallery.
+- Added Gift Set examples using the four Frida Luzia Gift Box Set assets and
+  retained their existing official product links.
+- Added Bluebell Heirloom and Springtide Reverie as Hampers Box inspiration.
+- Added Millefleur de Verdaine and Evangeline en Rouge as Hampers Tinggi
+  inspiration.
+- Added photo-led collection inspiration for Special Collaborations while
+  clarifying that these are visual references, not confirmed collaboration
+  package contents.
+- Kept existing catalogue tabs, quiz, WhatsApp actions, music playback, and
+  falling-snow behavior.
+
+REVISION CHECKS
+- JavaScript syntax check: passed.
+- HTML parser check: passed.
+- Four category panels each contain one feature image, one What's Inside
+  section, and a product/collection gallery.
+- Product/collection image count: Gift Set 4, Hampers Box 2,
+  Hampers Tinggi 2, Special Collaborations 2.
+- Packaging/format card count: Gift Set 2, Hampers Box 3,
+  Hampers Tinggi 2, Special Collaborations 3.
+- All local image references resolve.
+- Top navigation markup and its JavaScript handlers removed.
+- Music button remains present with its original ID for playback controls.
+- Automated full browser screenshot was attempted but Chromium did not finish
+  startup in this environment; visual browser regression remains unverified.
+
+REVISION ADDENDUM — 19 NOVEMBER 2026 (MOBILE-FIRST OPTIMIZATION)
+
+UPDATED
+- Refined hero spacing, typography, image composition, and CTA sizing for phone
+  screens while retaining the desktop hero layout.
+- Adjusted gifting journey cards and section spacing for a clearer single-column
+  mobile reading flow.
+- Reworked recommendation results, action buttons, and alternative cards for
+  narrow screens.
+- Made the four catalogue tabs horizontally scrollable with touch-friendly
+  targets and scroll snapping.
+- Tuned category feature images, What's Inside cards, packaging descriptions,
+  and product inspiration galleries for small screens.
+- Kept product galleries in two columns on common phone widths, then switched
+  to one column on extra-narrow screens.
+- Reworked Corporate Gifting cards, customization details, and CTAs for mobile.
+- Added mobile-safe spacing for the floating music control, toast, footer, and
+  full-screen quiz, including safe-area insets.
+- Reduced the number of animated snow particles on mobile for lighter rendering.
+- Desktop styles remain in place above the mobile breakpoints.
+
+REVISION CHECKS
+- JavaScript syntax check: passed.
+- CSS parser check: passed with zero top-level parse errors.
+- HTML parser check: passed.
+- Viewport meta tag: present and configured for device width.
+- Four catalogue panels and all category feature images: present.
+- Top navigation markup: absent; floating music control: present.
+- All local image, stylesheet, script, and audio references: resolve.
+- Automated interactive browser screenshots could not be completed in this
+  environment because the browser runtime blocked local-page navigation;
+  visual device testing remains recommended before public deployment.
